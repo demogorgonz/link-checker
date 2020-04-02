@@ -9,7 +9,7 @@ General usage is to test local web files for invalid internal and external links
 ## Example Usage:
 
 ```bash
-docker run -v ${PWD}/path/to/dir/site:/var/www/localhost/htdocs -d --name lc-web gitlab.nil.rs:4567/fstreoski/link-checker:latest /usr/sbin/httpd -D FOREGROUND
+docker run -v ${PWD}/path/to/dir/site:/var/www/localhost/htdocs -d --name lc-web filips92/link-checker:latest /usr/sbin/httpd -D FOREGROUND
 docker exec -i lc-web muffet -v -p -c 10 http://localhost
 ```
 
